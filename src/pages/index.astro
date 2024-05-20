@@ -1,16 +1,18 @@
 ---
-
+import RootLayout from "../layout/root-layout.astro"
+import Cta from "../views/cta.astro"
+import Company from "../views/landing/company.astro"
+import Hero from "../views/landing/hero.astro"
+import Learn from "../views/landing/learn.astro"
+import Organizers from "../views/landing/organizers.astro"
+import Testimony from "../views/landing/testimony.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<RootLayout>
+  <Hero />
+  <Company />
+  <Learn />
+  <Organizers />
+  <Cta />
+  <Testimony />
+</RootLayout>
